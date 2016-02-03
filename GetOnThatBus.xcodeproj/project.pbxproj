@@ -12,6 +12,8 @@
 		5D9319851C6153FC00C897C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9319831C6153FC00C897C1 /* Main.storyboard */; };
 		5D9319871C6153FC00C897C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9319861C6153FC00C897C1 /* Assets.xcassets */; };
 		5D93198A1C6153FC00C897C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9319881C6153FC00C897C1 /* LaunchScreen.storyboard */; };
+		5D9319921C6154A300C897C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9319911C6154A300C897C1 /* MapKit.framework */; };
+		5D9319941C61742A00C897C1 /* DetailVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9319931C61742A00C897C1 /* DetailVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5D9319861C6153FC00C897C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D9319891C6153FC00C897C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D93198B1C6153FC00C897C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D9319911C6154A300C897C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5D9319931C61742A00C897C1 /* DetailVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9319921C6154A300C897C1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		5D9319731C6153FC00C897C1 = {
 			isa = PBXGroup;
 			children = (
+				5D9319911C6154A300C897C1 /* MapKit.framework */,
 				5D93197E1C6153FC00C897C1 /* GetOnThatBus */,
 				5D93197D1C6153FC00C897C1 /* Products */,
 			);
@@ -57,6 +63,7 @@
 				5D93197F1C6153FC00C897C1 /* AppDelegate.swift */,
 				5D9319811C6153FC00C897C1 /* ViewController.swift */,
 				5D9319831C6153FC00C897C1 /* Main.storyboard */,
+				5D9319931C61742A00C897C1 /* DetailVCViewController.swift */,
 				5D9319861C6153FC00C897C1 /* Assets.xcassets */,
 				5D9319881C6153FC00C897C1 /* LaunchScreen.storyboard */,
 				5D93198B1C6153FC00C897C1 /* Info.plist */,
@@ -137,6 +144,7 @@
 			files = (
 				5D9319821C6153FC00C897C1 /* ViewController.swift in Sources */,
 				5D9319801C6153FC00C897C1 /* AppDelegate.swift in Sources */,
+				5D9319941C61742A00C897C1 /* DetailVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import MapKit
 
 class DetailVCViewController: UIViewController {
-
+    
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var busLabel: UILabel!
+    @IBOutlet weak var transferLabel: UILabel!
+    var busDictionary : [NSDictionary] = []
+    var annotation : MKAnnotation!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        for dict in self.busArray{
+            if (annotation.title!!.isEqual(dict.valueForKey("cta_stop_name"))){
+                self.addressLabel.text = dict.valueForKey.
+            }
+        }
+        navigationController?.navigationBar.topItem?.title = self.annotation.title!
         // Do any additional setup after loading the view.
     }
 
