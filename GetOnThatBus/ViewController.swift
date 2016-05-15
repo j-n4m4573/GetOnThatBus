@@ -26,6 +26,7 @@ class ViewController: UIViewController,MKMapViewDelegate {
         (data:NSData?,response:NSURLResponse?,error:NSError?)-> Void in
             do {
                 self.busData = try NSJSONSerialization.JSONObjectWithData(data!,options:  .AllowFragments)as! NSDictionary
+                
                 self.busArray = self.busData.objectForKey("row") as! Array<NSDictionary>
                 for dict in self.busArray {
                     let latitude = dict.objectForKey("latitude")as! String
@@ -36,6 +37,7 @@ class ViewController: UIViewController,MKMapViewDelegate {
                     let routeNames = dict.objectForKey("routes")as? String
                     annotation.title = stopName
                     annotation.subtitle = routeNames
+                    
                     self.mapView.addAnnotation(annotation)
                     self.mapView.reloadInputViews()
                     
@@ -55,6 +57,7 @@ class ViewController: UIViewController,MKMapViewDelegate {
         for dict in self.busArray{
             if (annotation.title!!.isEqual(dict.valueForKey("cta_stop_name"))){
                 pin.canShowCallout = true
+                
                 pin.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
                 //pin.tag = dict.objectForKey("_id") as! Int
                 print("Inside annotation view")
